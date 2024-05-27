@@ -23,7 +23,7 @@
 
 .main {
   background-repeat: no-repeat;
-  background-attachment: fixed;  /* Background won't scroll with content */
+  background-attachment: fixed;  
   background-position: center;
   background-size: cover;
 }
@@ -33,9 +33,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300vh; /* Adjust height as needed */
+  height: 260vh; 
   background-image: url("image3.jpg");
-  background-attachment: fixed; /* Slowest movement (fixed to viewport) */
+  background-attachment: fixed; 
   background-size: cover;
   z-index: -1;
 }
@@ -45,9 +45,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 150vh; /* Adjust height as needed */
+  height: 119vh; 
   background-image: url("image4.jpg");
-  background-attachment: scroll; /* Medium speed (scrolls with content) */
+  background-attachment: scroll; 
   background-size: cover;
   z-index: -1;
 }

@@ -55,8 +55,8 @@ const parallaxImage2 = document.querySelector('.image-layer2');
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  parallaxImage1.style.transform = `translateY(${scrollY / 5}px)`;  // Adjust division factor for slower movement
-  parallaxImage2.style.transform = `translateY(${scrollY / 3}px)`;  // Adjust division factor for medium speed
+  parallaxImage1.style.transform = `translateY(${scrollY / 5}px)`;  
+  parallaxImage2.style.transform = `translateY(${scrollY / 3}px)`;  
 
 });
 
