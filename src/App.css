@@ -1,38 +1,54 @@
-.App {
+.navbar {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tab {
+  margin-left: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.benface {
+  width: 200px;
+  height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main {
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* Background won't scroll with content */
+  background-position: center;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-layer1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300vh; /* Adjust height as needed */
+  background-image: url("image3.jpg");
+  background-attachment: fixed; /* Slowest movement (fixed to viewport) */
+  background-size: cover;
+  z-index: -1;
 }
+
+.image-layer2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150vh; /* Adjust height as needed */
+  background-image: url("image4.jpg");
+  background-attachment: scroll; /* Medium speed (scrolls with content) */
+  background-size: cover;
+  z-index: -1;
+}
+
